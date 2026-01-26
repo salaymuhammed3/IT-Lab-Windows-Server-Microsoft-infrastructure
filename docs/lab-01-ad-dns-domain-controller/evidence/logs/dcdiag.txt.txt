@@ -1,0 +1,322 @@
+C:\Users\Administrator>dcdiag /v
+
+Directory Server Diagnosis
+
+Performing initial setup:
+   Trying to find home server...
+   * Verifying that the local machine DC1, is a Directory Server.
+   Home Server = DC1
+   * Connecting to directory service on server DC1.
+   * Identified AD Forest.
+   Collecting AD specific global data
+   * Collecting site info.
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=lab,DC=local,LDAP_SCOPE_SUBTREE,(objectCategory=ntDSSiteSettings),.......
+   The previous call succeeded
+   Iterating through the sites
+   Looking at base site object: CN=NTDS Site Settings,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+   Getting ISTG and options for the site
+   * Identifying all servers.
+   Calling ldap_search_init_page(hld,CN=Sites,CN=Configuration,DC=lab,DC=local,LDAP_SCOPE_SUBTREE,(objectClass=ntDSDsa),.......
+   The previous call succeeded....
+   The previous call succeeded
+   Iterating through the list of servers
+   Getting information for the server CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+   objectGuid obtained
+   InvocationID obtained
+   dnsHostname obtained
+   site info obtained
+   All the info for the server collected
+   * Identifying all NC cross-refs.
+   * Found 1 DC(s). Testing 1 of them.
+   Done gathering initial info.
+
+Doing initial required tests
+
+   Testing server: Default-First-Site-Name\DC1
+      Starting test: Connectivity
+         * Active Directory LDAP Services Check
+         Determining IP4 connectivity
+         * Active Directory RPC Services Check
+         ......................... DC1 passed test Connectivity
+
+Doing primary tests
+
+   Testing server: Default-First-Site-Name\DC1
+      Starting test: Advertising
+         The DC DC1 is advertising itself as a DC and having a DS.
+         The DC DC1 is advertising as an LDAP server
+         The DC DC1 is advertising as having a writeable directory
+         The DC DC1 is advertising as a Key Distribution Center
+         The DC DC1 is advertising as a time server
+         The DS DC1 is advertising as a GC.
+         ......................... DC1 passed test Advertising
+      Test omitted by user request: CheckSecurityError
+      Test omitted by user request: CutoffServers
+      Starting test: FrsEvent
+         * The File Replication Service Event log test
+         Skip the test because the server is running DFSR.
+         ......................... DC1 passed test FrsEvent
+      Starting test: DFSREvent
+         The DFS Replication Event Log.
+         There are warning or error events within the last 24 hours after the SYSVOL has been shared.  Failing SYSVOL
+         replication problems may cause Group Policy problems.
+         An error event occurred.  EventID: 0xC00017D8
+            Time Generated: 01/26/2026   21:21:29
+            Event String:
+            The DFS Replication service failed to register the WMI providers. Replication is disabled until the problem is resolved.
+
+            Additional Information:
+            Error: 2147749902 (100e)
+         An error event occurred.  EventID: 0xC00004B2
+            Time Generated: 01/26/2026   21:21:30
+            Event String:
+            The DFS Replication service failed to contact domain controller  to access configuration information. Replication is stopped. The service will try again during the next configuration polling cycle, which will occur in 60 minutes. This event can be caused by TCP/IP connectivity, firewall, Active Directory Domain Services, or DNS issues.
+
+            Additional Information:
+            Error: 1355 (The specified domain either does not exist or could not be contacted.)
+         A warning event occurred.  EventID: 0x80001780
+            Time Generated: 01/26/2026   21:32:09
+            Event String:
+            The DFS Replication service failed to update configuration in Active Directory Domain Services. The service will retry this operation periodically.
+
+            Additional Information:
+            Object Category: msDFSR-LocalSettings
+            Object DN: CN=DFSR-LocalSettings,CN=DC1,OU=Domain Controllers,DC=lab,DC=local
+            Error: 1355 (The specified domain either does not exist or could not be contacted.)
+            Domain Controller:
+            Polling Cycle: 60
+         ......................... DC1 failed test DFSREvent
+      Starting test: SysVolCheck
+         * The File Replication Service SYSVOL ready test
+         File Replication Service's SYSVOL is ready
+         ......................... DC1 passed test SysVolCheck
+      Starting test: KccEvent
+         * The KCC Event log test
+         Found no KCC errors in "Directory Service" Event log in the last 15 minutes.
+         ......................... DC1 passed test KccEvent
+      Starting test: KnowsOfRoleHolders
+         Role Schema Owner = CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+         Role Domain Owner = CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+         Role PDC Owner = CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+         Role Rid Owner = CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+         Role Infrastructure Update Owner = CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local
+         ......................... DC1 passed test KnowsOfRoleHolders
+      Starting test: MachineAccount
+         Checking machine account for DC DC1 on DC DC1.
+         * SPN found :LDAP/DC1.lab.local/lab.local
+         * SPN found :LDAP/DC1.lab.local
+         * SPN found :LDAP/DC1
+         * SPN found :LDAP/DC1.lab.local/LAB
+         * SPN found :LDAP/d55a7d95-ed44-4e76-b950-9685fd81e50c._msdcs.lab.local
+         * SPN found :E3514235-4B06-11D1-AB04-00C04FC2DCD2/d55a7d95-ed44-4e76-b950-9685fd81e50c/lab.local
+         * SPN found :HOST/DC1.lab.local/lab.local
+         * SPN found :HOST/DC1.lab.local
+         * SPN found :HOST/DC1
+         * SPN found :HOST/DC1.lab.local/LAB
+         * SPN found :GC/DC1.lab.local/lab.local
+         ......................... DC1 passed test MachineAccount
+      Starting test: NCSecDesc
+         * Security Permissions check for all NC's on DC DC1.
+         * Security Permissions Check for
+           DC=ForestDnsZones,DC=lab,DC=local
+            (NDNC,Version 3)
+         * Security Permissions Check for
+           DC=DomainDnsZones,DC=lab,DC=local
+            (NDNC,Version 3)
+         * Security Permissions Check for
+           CN=Schema,CN=Configuration,DC=lab,DC=local
+            (Schema,Version 3)
+         * Security Permissions Check for
+           CN=Configuration,DC=lab,DC=local
+            (Configuration,Version 3)
+         * Security Permissions Check for
+           DC=lab,DC=local
+            (Domain,Version 3)
+         ......................... DC1 passed test NCSecDesc
+      Starting test: NetLogons
+         * Network Logons Privileges Check
+         Verified share \\DC1\netlogon
+         Verified share \\DC1\sysvol
+         ......................... DC1 passed test NetLogons
+      Starting test: ObjectsReplicated
+         DC1 is in domain DC=lab,DC=local
+         Checking for CN=DC1,OU=Domain Controllers,DC=lab,DC=local in domain DC=lab,DC=local on 1 servers
+            Object is up-to-date on all servers.
+         Checking for CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local in domain CN=Configuration,DC=lab,DC=local on 1 servers
+            Object is up-to-date on all servers.
+         ......................... DC1 passed test ObjectsReplicated
+      Test omitted by user request: OutboundSecureChannels
+      Starting test: Replications
+         * Replications Check
+         * Replication Latency Check
+         ......................... DC1 passed test Replications
+      Starting test: RidManager
+         * Available RID Pool for the Domain is 1600 to 1073741823
+         * DC1.lab.local is the RID Master
+         * DsBind with RID Master was successful
+         * rIDAllocationPool is 1100 to 1599
+         * rIDPreviousAllocationPool is 1100 to 1599
+         * rIDNextRID: 1102
+         ......................... DC1 passed test RidManager
+      Starting test: Services
+         * Checking Service: EventSystem
+         * Checking Service: RpcSs
+         * Checking Service: NTDS
+         * Checking Service: DnsCache
+         * Checking Service: DFSR
+         * Checking Service: IsmServ
+         * Checking Service: kdc
+         * Checking Service: SamSs
+         * Checking Service: LanmanServer
+         * Checking Service: LanmanWorkstation
+         * Checking Service: w32time
+         * Checking Service: NETLOGON
+         ......................... DC1 passed test Services
+      Starting test: SystemLog
+         * The System Event log test
+         An error event occurred.  EventID: 0x80001778
+            Time Generated: 01/26/2026   21:07:57
+            Event String: The previous system shutdown at 21:03:19 on 25/01/2026 was unexpected.
+         An error event occurred.  EventID: 0x00000029
+            Time Generated: 01/26/2026   21:07:54
+            Event String:
+            The system has rebooted without cleanly shutting down first. This error could be caused if the system stopped responding, crashed, or lost power unexpectedly.
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 01/26/2026   21:07:59
+            Event String:
+            Name resolution for the name time.windows.com timed out after none of the configured DNS servers responded.
+         A warning event occurred.  EventID: 0x00000086
+            Time Generated: 01/26/2026   21:07:59
+            Event String:
+            NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.windows.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: No such host is known. (0x80072AF9)
+         A warning event occurred.  EventID: 0x00000086
+            Time Generated: 01/26/2026   21:08:00
+            Event String:
+            NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.windows.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: No such host is known. (0x80072AF9)
+         A warning event occurred.  EventID: 0x00002720
+            Time Generated: 01/26/2026   21:08:09
+            Event String:
+            The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+            {21B896BF-008D-4D01-A27B-26061B960DD7}
+             and APPID
+            {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+             to the user DC1\Administrator SID (S-1-5-21-599562152-65166530-2644820493-500) from address LocalHost (Using LRPC) running in the application container Unavailable SID (Unavailable). This security permission can be modified using the Component Services administrative tool.
+         A warning event occurred.  EventID: 0x80000434
+            Time Generated: 01/26/2026   21:08:16
+            Event String:
+            The reason supplied by user DC1\Administrator for the last unexpected shutdown of this computer is: Other (Unplanned)
+             Reason Code: 0xa000000
+             Problem ID:
+             Bugcheck String:
+             Comment:
+
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 01/26/2026   21:31:30
+            Event String:
+            Name resolution for the name _ldap._tcp.dc._msdcs.lab.local. timed out after none of the configured DNS servers responded.
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 01/26/2026   21:31:30
+            Event String:
+            Name resolution for the name _ldap._tcp.dc._msdcs.lab.local. timed out after none of the configured DNS servers responded.
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 01/26/2026   21:31:30
+            Event String:
+            Name resolution for the name wpad timed out after none of the configured DNS servers responded.
+         A warning event occurred.  EventID: 0x000727AA
+            Time Generated: 01/26/2026   21:31:52
+            Event String:
+            The WinRM service failed to create the following SPNs: WSMAN/DC1.lab.local; WSMAN/DC1.
+
+             Additional Data
+             The error received was 1355: %%1355.
+
+             User Action
+             The SPNs can be created by an administrator using setspn.exe utility.
+         A warning event occurred.  EventID: 0x0000000C
+            Time Generated: 01/26/2026   21:32:09
+            Event String:
+            Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but it is the AD PDC emulator for the domain at the root of the forest, so there is no machine above it in the domain hierarchy to use as a time source. It is recommended that you either configure a reliable time service in the root domain, or manually configure the AD PDC to synchronize with an external time source. Otherwise, this machine will function as the authoritative time source in the domain hierarchy. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 01/26/2026   21:34:26
+            Event String:
+            Name resolution for the name v10.events.data.microsoft.com timed out after none of the configured DNS servers responded.
+         A warning event occurred.  EventID: 0x00002720
+            Time Generated: 01/26/2026   21:38:21
+            Event String:
+            The application-specific permission settings do not grant Local Launch permission for the COM Server application with CLSID
+            {21B896BF-008D-4D01-A27B-26061B960DD7}
+             and APPID
+            {03E09F3B-DCE4-44FE-A9CF-82D050827E1C}
+             to the user LAB\Administrator SID (S-1-5-21-599562152-65166530-2644820493-500) from address LocalHost (Using LRPC) running in the application container Unavailable SID (Unavailable). This security permission can be modified using the Component Services administrative tool.
+         A warning event occurred.  EventID: 0x000003F6
+            Time Generated: 01/26/2026   21:38:31
+            Event String:
+            Name resolution for the name slscr.update.microsoft.com timed out after none of the configured DNS servers responded.
+         ......................... DC1 failed test SystemLog
+      Test omitted by user request: Topology
+      Test omitted by user request: VerifyEnterpriseReferences
+      Starting test: VerifyReferences
+         The system object reference (serverReference) CN=DC1,OU=Domain Controllers,DC=lab,DC=local and backlink on
+         CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local are correct.
+         The system object reference (serverReferenceBL)
+         CN=DC1,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=lab,DC=local and backlink on
+         CN=NTDS Settings,CN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=lab,DC=local are
+         correct.
+         The system object reference (msDFSR-ComputerReferenceBL)
+         CN=DC1,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=lab,DC=local and backlink on
+         CN=DC1,OU=Domain Controllers,DC=lab,DC=local are correct.
+         ......................... DC1 passed test VerifyReferences
+      Test omitted by user request: VerifyReplicas
+
+      Test omitted by user request: DNS
+      Test omitted by user request: DNS
+
+   Running partition tests on : ForestDnsZones
+      Starting test: CheckSDRefDom
+         ......................... ForestDnsZones passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... ForestDnsZones passed test CrossRefValidation
+
+   Running partition tests on : DomainDnsZones
+      Starting test: CheckSDRefDom
+         ......................... DomainDnsZones passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... DomainDnsZones passed test CrossRefValidation
+
+   Running partition tests on : Schema
+      Starting test: CheckSDRefDom
+         ......................... Schema passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... Schema passed test CrossRefValidation
+
+   Running partition tests on : Configuration
+      Starting test: CheckSDRefDom
+         ......................... Configuration passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... Configuration passed test CrossRefValidation
+
+   Running partition tests on : lab
+      Starting test: CheckSDRefDom
+         ......................... lab passed test CheckSDRefDom
+      Starting test: CrossRefValidation
+         ......................... lab passed test CrossRefValidation
+
+   Running enterprise tests on : lab.local
+      Test omitted by user request: DNS
+      Test omitted by user request: DNS
+      Starting test: LocatorCheck
+         GC Name: \\DC1.lab.local
+         Locator Flags: 0xe003f3fd
+         PDC Name: \\DC1.lab.local
+         Locator Flags: 0xe003f3fd
+         Time Server Name: \\DC1.lab.local
+         Locator Flags: 0xe003f3fd
+         Preferred Time Server Name: \\DC1.lab.local
+         Locator Flags: 0xe003f3fd
+         KDC Name: \\DC1.lab.local
+         Locator Flags: 0xe003f3fd
+         ......................... lab.local passed test LocatorCheck
+      Starting test: Intersite
+         Skipping site Default-First-Site-Name, this site is outside the scope provided by the command line arguments
+         provided.
+         ......................... lab.local passed test Intersite

@@ -1,0 +1,11 @@
+Microsoft Windows [Version 10.0.20348.587]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator>nslookup dc1.lab.local
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  ::1
+
+Name:    dc1.lab.local
+Address:  10.20.20.10

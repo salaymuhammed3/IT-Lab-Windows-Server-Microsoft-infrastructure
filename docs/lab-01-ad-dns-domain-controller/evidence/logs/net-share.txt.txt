@@ -1,0 +1,15 @@
+Microsoft Windows [Version 10.0.20348.587]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator>net share
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share
+IPC$                                         Remote IPC
+ADMIN$       C:\Windows                      Remote Admin
+NETLOGON     C:\Windows\SYSVOL\sysvol\lab.local\SCRIPTS
+                                             Logon server share
+SYSVOL       C:\Windows\SYSVOL\sysvol        Logon server share
+The command completed successfully.
