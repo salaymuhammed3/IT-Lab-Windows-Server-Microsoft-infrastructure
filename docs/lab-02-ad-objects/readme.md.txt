@@ -57,7 +57,8 @@ A 'group' OU was created that contains the object 'groups' which has the 'securi
 
 ## Evidence
 
-![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/301177977e354524597d45e9df98299332626742/docs/lab-02-ad-objects/evidence/Adding-users-to-designated-security%20group-corresponding-with-name.png)
+![image alt](docs/lab-02-ad-objects/evidence/Adding-users-to-designated-security group-corresponding-with-name.png)
+
 
 
 
