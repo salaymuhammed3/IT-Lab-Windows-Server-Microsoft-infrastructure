@@ -59,10 +59,11 @@ A 'group' OU was created that contains the object 'groups' which has the 'securi
 
 ![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/74ce325b8f9f771f4d030492a67e28c1a6bd734b/docs/lab-02-ad-objects/evidence/Adding-users-to-designated-security%20group-corresponding-with-name.png)
 
+![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-student-security-group.png)
 
+![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-user-within-staff-OU.png)
 
-
-
+![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Setting-up-OU'S.png)
 
 
 
