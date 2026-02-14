@@ -36,4 +36,4 @@ This step installs Active Directory Domain Services and DNS, then promotes the s
 ## Result
 DC1 successfully promoted to a domain controller for lab.local.
 
-![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/f99a3e3a2bc8a7902c6bfa6357e1ccaa07f7dc89/docs/lab-01-ad-dns-domain-controller/evidence/screenshots/AD%20DS%20-%20(DC1)%20ADDING%20SREVER%20roles%20(%20vm).png) 
+![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/raw/f99a3e3a2bc8a7902c6bfa6357e1ccaa07f7dc89/docs/lab-01-ad-dns-domain-controller/evidence/screenshots/AD%20DS%20-%20(DC1)%20ADDING%20SREVER%20roles%20(%20vm).png) 
