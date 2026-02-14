@@ -55,34 +55,5 @@ A 'group' OU was created that contains the object 'groups' which has the 'securi
 
 
 
-## Evidence
-
-![Creating student security group](evidence/creating-student-security-group.png)
-
-![Creating user within staff OU](evidence/creating-user-within-staff-ou.png)
-
-![Setting up OUs](evidence/setting-up-ous.png)
-
-![Adding users to security group](evidence/adding-users-to-security-group.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
