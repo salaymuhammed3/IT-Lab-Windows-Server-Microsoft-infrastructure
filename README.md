@@ -19,7 +19,7 @@ Documented resolutions include:
 - remediation Steps: Detailed logs of the specific commands and configuration changes used to fix issues.
 - Technical Adaptability: Demonstrating quick technical thinking to research, test, and implement fixes without disrupting the broader environment.
 
-See the "Troubleshooting Logs" folder for detailed case studies of specific errors and their solutions.
+See the "Troubleshooting" folder for detailed case studies of specific errors and their solutions.
 
 ---
 This lab serves as a living documentation of my progression in System Administration and Infrastructure Engineering.
