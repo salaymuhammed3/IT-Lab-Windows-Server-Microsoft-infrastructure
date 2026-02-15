@@ -13,11 +13,21 @@ Lab 1 - Deployment of Active Directory Domain Controller
  
  
  
+ 
+ 
  -Configure the sever 
  
  
  
+ 
+ 
+ 
+ 
  -Install AD DS and DNS to DC1 sever 
+ 
+ 
+ 
+ 
  
  
  
