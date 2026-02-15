@@ -40,3 +40,25 @@ Figure 1: Installation of active directory and domain services (AS DS)
 
 
 Figure 2: Showing that DC1 (Server name) is my domain controller 
+
+
+
+
+
+
+
+
+
+<img width="640" height="184" alt="image" src="https://github.com/user-attachments/assets/ea6e1725-3ad4-4359-a54a-1f7ae7366729" />
+
+
+
+
+
+
+<img width="640" height="184" alt="image" src="https://github.com/user-attachments/assets/dc0a74ea-d217-4de0-b746-828eccdda828" />
+
+
+
+
+Figure 3: Conforming that SYSVOL and NETLOGON are working meaning that domain contreoller is operational 
