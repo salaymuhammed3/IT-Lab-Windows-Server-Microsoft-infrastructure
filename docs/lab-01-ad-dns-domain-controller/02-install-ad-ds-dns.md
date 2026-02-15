@@ -57,4 +57,4 @@ Figure 2: Showing that DC1 (Server name) is my domain controller
 
 
 
-Figure 3: Conforming that SYSVOL and NETLOGON are working meaning that domain contreoller is operational 
+Figure 3: Confirming that SYSVOL and NETLOGON are working meaning that domain contreoller is operational 
