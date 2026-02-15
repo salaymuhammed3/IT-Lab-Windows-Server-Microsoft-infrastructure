@@ -56,39 +56,51 @@ A 'group' OU was created that contains the object 'groups' which has the 'securi
 
 ## Evidence
 
+Figure 1: Shows the creation of the OU (Organisational Unit) called 'School' which will contian all other nested OU's and objects for all school related objects such as ( Staff, Student and computer/laptops)
+
 ![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Setting-up-OU'S.png)
 
 
-Figure 1: Shows the creation of the OU (Organisational Unit) called 'School' which will contian all other nested OU's and objects for all school related objects such as ( Staff, Student and computer/laptops)
 
 
-![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-user-within-staff-OU.png)
+
+
+
 
 
 Figure 2: Creation of nested OU called 'staff' and then the nested OU within called 'users', i.e. staff user accounts
 
-
-
 ![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-user-within-staff-OU.png)
+
+
+
+
+
 
 
 Figure 3: Creating users within the Staff nested OU called 'users'
 
+![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-user-within-staff-OU.png)
 
 
 
 
 
 
-![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-student-security-group.png)
 
 
 Figure 4: Student security group being created so that all students can be added to security group that will have pre-configured permissions when a 'student' user is added, allows for fast creation and deploymnet of accounts based on their roles i.e. student or staff
 
+![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/26dd99a3d7bbc3be9177d3faa37db4136b1463f2/docs/lab-02-ad-objects/evidence/Creating-student-security-group.png)
 
 
 
 
+
+
+
+
+Figure 5: Adding staff to staff security group and image above shows user account being opened to check that user was added to correct security group
 
 ![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/blob/74ce325b8f9f771f4d030492a67e28c1a6bd734b/docs/lab-02-ad-objects/evidence/Adding-users-to-designated-security%20group-corresponding-with-name.png)
 
