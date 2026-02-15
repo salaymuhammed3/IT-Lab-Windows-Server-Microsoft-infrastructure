@@ -39,4 +39,4 @@ Figure 1: Installation of active directory and domain services (AS DS)
 
 
 
-Figure 2: Showing that DC1 (Server name), and lab.local (domain name)
+Figure 2: Showing that DC1 (Server name) is my domain controller 
