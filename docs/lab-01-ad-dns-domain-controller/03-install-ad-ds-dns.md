@@ -1,10 +1,3 @@
-Note:
-
-((Initial 'nslookup' output shows IPv6 (::1 = loopback), timeout before successfully resolving to IPv4.
-
-This is expected behaviour in my lab environment where IPv6 is has not been explicitly configured ))
-
-
 # Lab 01 – Step 03: Install AD DS and DNS
 
 ## Purpose
@@ -41,4 +34,3 @@ DC1 successfully promoted to a domain controller for lab.local.
 
 ![image alt](https://github.com/salaymuhammed3/IT-Lab-Windows-Server-Microsoft-infrastructure/raw/f99a3e3a2bc8a7902c6bfa6357e1ccaa07f7dc89/docs/lab-01-ad-dns-domain-controller/evidence/screenshots/AD%20DS%20-%20(DC1)%20ADDING%20SREVER%20roles%20(%20vm).png) 
 Figure 1: Installation of active directory and domain services (AS DS)
-
