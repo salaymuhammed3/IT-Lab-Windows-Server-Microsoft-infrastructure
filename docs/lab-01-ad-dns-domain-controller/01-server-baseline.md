@@ -20,9 +20,9 @@ These steps are mandatory best practice before promoting a domain controller.
 ## Network configuration
 - Network adapter renamed to: LAN-VMnet20
 - Static IPv4 configuration applied:
-  - IP: 10.20.20.10
+  - IP: 192.168.232.129
   - Subnet: 255.255.255.0
-  - DNS: 10.20.20.10
+  - DNS: 127.0.0.1
   - Gateway: Not required for internal LAN
 
 ---
