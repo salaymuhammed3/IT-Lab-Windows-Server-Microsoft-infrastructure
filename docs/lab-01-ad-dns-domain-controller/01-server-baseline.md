@@ -38,3 +38,13 @@ A VMware snapshot was taken prior to Active Directory installation to allow rapi
 
 Snapshot name:
 - Pre-AD Baseline
+
+
+
+
+#### Evidence
+
+<img width="199" height="226" alt="image" src="https://github.com/user-attachments/assets/3d66164b-1483-4f49-b0f7-835c7be1d33d" />
+
+
+
