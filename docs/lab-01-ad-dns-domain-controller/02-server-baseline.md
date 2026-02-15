@@ -1,4 +1,4 @@
-# Lab 01 – Step 02: Server Baseline Configuration
+# Lab 01 – Step 01: Server Baseline Configuration
 
 ## Purpose
 This step prepares the Windows Server for Active Directory by applying baseline configuration:
