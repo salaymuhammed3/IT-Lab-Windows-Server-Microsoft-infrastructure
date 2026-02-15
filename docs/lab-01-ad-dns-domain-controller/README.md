@@ -10,8 +10,27 @@ Lab 1 - Deployment of Active Directory Domain Controller
 ## Scope of project:
 
  -Installed Widows Server 
+ 
+ 
+ 
+ 
+ 
  -Configure the sever 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  -Install AD DS and DNS to DC1 sever 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  -Promoting Domain Controller
 
 ## Expected Outcome of project:
