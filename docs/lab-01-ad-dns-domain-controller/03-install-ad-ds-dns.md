@@ -37,4 +37,6 @@ Figure 1: Installation of active directory and domain services (AS DS)
 
 <img width="820" height="404" alt="image" src="https://github.com/user-attachments/assets/3e057978-4637-472b-9acd-f17fed872367" />
 
+
+
 Figure 2: Showing that DC1 (Server name), and lab.local (domain name)
