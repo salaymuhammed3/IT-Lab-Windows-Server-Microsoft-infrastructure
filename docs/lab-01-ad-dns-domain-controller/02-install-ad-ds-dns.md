@@ -58,3 +58,18 @@ Figure 2: Showing that DC1 (Server name) is my domain controller
 
 
 Figure 3: Confirming that SYSVOL and NETLOGON are working meaning that domain controller is operational 
+
+
+
+
+
+
+
+<img width="372" height="90" alt="image" src="https://github.com/user-attachments/assets/e27ffdb7-5251-417c-aacf-847be7cd4acd" />
+
+
+
+
+
+  Figure 4: nslookup executed to show domian controller can successfully resolve to 'lab.local' using local DNS service (127.0.0.1)
+
