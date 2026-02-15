@@ -48,3 +48,14 @@ Snapshot name:
 
 
 
+
+<img width="380" height="229" alt="image" src="https://github.com/user-attachments/assets/e4d1e495-d9b8-425e-8238-e24151af7b1c" />
+
+
+
+
+
+
+
+Figure 1 & 2: Shows that configuration for the network with an assigned static IP and confirmation via CMD to show that settings are applied. 
+
