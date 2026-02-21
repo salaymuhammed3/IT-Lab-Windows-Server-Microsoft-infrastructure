@@ -20,9 +20,9 @@ These steps are mandatory best practice before promoting a domain controller.
 ## Network configuration
 - Network adapter renamed to: LAN-VMnet20
 - Static IPv4 configuration applied:
-  - IP: 10.20.20.10
+  - IP: 192.168.232.129
   - Subnet: 255.255.255.0
-  - DNS: 10.20.20.10
+  - DNS: 127.0.0.1
   - Gateway: Not required for internal LAN
 
 ---
@@ -38,3 +38,24 @@ A VMware snapshot was taken prior to Active Directory installation to allow rapi
 
 Snapshot name:
 - Pre-AD Baseline
+
+
+
+
+#### Evidence
+
+<img width="199" height="226" alt="image" src="https://github.com/user-attachments/assets/3d66164b-1483-4f49-b0f7-835c7be1d33d" />
+
+
+
+
+<img width="380" height="229" alt="image" src="https://github.com/user-attachments/assets/e4d1e495-d9b8-425e-8238-e24151af7b1c" />
+
+
+
+
+
+
+
+Figure 1 & 2: Shows that configuration for the network with an assigned static IP and confirmation via CMD to show that settings are applied. 
+
