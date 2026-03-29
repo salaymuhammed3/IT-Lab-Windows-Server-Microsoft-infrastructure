@@ -1,4 +1,4 @@
-# Lab 01 – Step 03: Install AD DS and DNS
+# Lab 01 – Step 02: Install AD DS and DNS
 
 ## Purpose
 This step installs Active Directory Domain Services and DNS, then promotes the server to a Domain Controller in a new forest.
